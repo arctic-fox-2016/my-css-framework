@@ -1,0 +1,29 @@
+{
+  "name": "sass_framework",
+  "version": "1.0.0",
+  "description": "this is the way to implement sass in project",
+  "main": "sass.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss main.scss   main.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctic-fox-2016/my-css-framework.git"
+  },
+  "keywords": [
+    "sass",
+    "css"
+  ],
+  "author": "ariadiprana <ari.adiprana@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arctic-fox-2016/my-css-framework/issues"
+  },
+  "homepage": "https://github.com/arctic-fox-2016/my-css-framework#readme",
+  "dependencies": {
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.10.2"
+  }
+}
