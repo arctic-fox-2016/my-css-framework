@@ -49,9 +49,7 @@
 	window.$ = window.jQuery = __webpack_require__(1);
 
 	// dah pake jquery
-	$(function () {
-	    alert("Oke");
-	});
+	$(function () {});
 
 /***/ },
 /* 1 */

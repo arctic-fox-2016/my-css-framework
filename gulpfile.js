@@ -3,14 +3,25 @@ var gulp = require("gulp"),
     autoprefixer = require("gulp-autoprefixer"),
     browserSync = require("browser-sync"),
     webpack = require("webpack-stream");
+var customizeBootstrap = require('gulp-customize-bootstrap');
 
 
 gulp.task("sass", function() {
-    return gulp.src("./resource/assets/sass/**/*.scss")
-        .pipe(sass())
-        .pipe(autoprefixer())
-        .pipe(gulp.dest("./public/assets/css"))
-})
+        return gulp.src("./resource/assets/sass/**/*.scss")
+            .pipe(sass({
+                includePaths: require('node-bourbon').includePaths
+            }))
+            .pipe(autoprefixer())
+            .pipe(gulp.dest("./public/assets/css"))
+    })
+    //
+    // gulp.task('compileBootstrap', function() {
+    //     return gulp.src('node_modules/bootstrap/scss/bootstrap.scss')
+    //         .pipe(customizeBootstrap('styles/scss/*.scss'))
+    //         .pipe(sass())
+    //         .pipe(gulp.dest('styles/'));
+    // });
+    //
 
 //wepack digabung dengan gulp
 gulp.task("script", function() {
@@ -29,7 +40,7 @@ gulp.task("serve", function() {
     gulp.watch("./resource/assets/sass/**/*.scss", ['sass']);
     gulp.watch("./resource/assets/js/**/*.js", ['script']);
 
-    gulp.watch("./public/assets/css/**/*.css").on("change", browserSync.reload)
+    gulp.watch("./public/assets/css/**/*.css").on("change", browserSync.reload) //stiap ada perubahan reload
     gulp.watch("./public/assets/js/app.js").on("change", browserSync.reload)
     gulp.watch("./public/*.html").on("change", browserSync.reload)
 })

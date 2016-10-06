@@ -1,5 +1,28 @@
 @import "scaffold";
+@import "bourbon";
 
 body {
-  background-color:#000000;
+  background-color: #fff;
+
+}
+h1 {
+  font-family: $helvetica;
+}
+
+
+section {
+  @include linear-gradient(to top, red, orange);
+}
+
+a:hover {
+  // Animation shorthand works the same as the CSS3 animation shorthand
+  @include animation-iteration-count(infinite);
+
+}
+button{
+@include button(shiny, #ff0000);
+}
+
+.box {
+  @include border-style(dashed null solid);
 }
