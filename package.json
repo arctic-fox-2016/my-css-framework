@@ -1,0 +1,28 @@
+{
+  "name": "my-css-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-sass-middleware": "^0.9.8"
+  },
+  "devDependencies": {
+    "node-sass": "^3.10.1",
+    "nodemon": "^1.10.2"
+  },
+  "scripts": {
+    "build-css": "node-sass --include-path scss asset/sass/diga.min.scss asset/css/diga.min.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctic-fox-2016/my-css-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arctic-fox-2016/my-css-framework/issues"
+  },
+  "homepage": "https://github.com/arctic-fox-2016/my-css-framework#readme"
+}
