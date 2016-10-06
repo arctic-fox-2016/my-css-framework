@@ -1,5 +1,6 @@
 @import "scaffold";
 @import "bourbon";
+@import "neat";
 
 body {
   background-color: #fff;
@@ -20,9 +21,14 @@ a:hover {
 
 }
 button{
-@include button(shiny, #ff0000);
 }
 
 .box {
   @include border-style(dashed null solid);
+}
+
+.section-test {
+  @include outer-container;
+  header { @include span-columns(3); }
+  section { @include span-columns(9); }
 }

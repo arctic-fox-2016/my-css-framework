@@ -5,13 +5,19 @@ var gulp = require("gulp"),
     webpack = require("webpack-stream");
 var customizeBootstrap = require('gulp-customize-bootstrap');
 
+var bourbon = require('node-bourbon').includePaths,
+    neat = require('bourbon-neat').includePaths;
 
 gulp.task("sass", function() {
         return gulp.src("./resource/assets/sass/**/*.scss")
             .pipe(sass({
-                includePaths: require('node-bourbon').includePaths
+                //includePaths: require('node-bourbon').includePaths
+                includePaths: [].concat(bourbon, neat),
+
             }))
-            .pipe(autoprefixer())
+
+
+        .pipe(autoprefixer())
             .pipe(gulp.dest("./public/assets/css"))
     })
     //
