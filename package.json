@@ -1,0 +1,20 @@
+{
+  "name": "my-css-framework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss style/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arctic-fox-2016/my-css-framework.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arctic-fox-2016/my-css-framework/issues"
+  },
+  "homepage": "https://github.com/arctic-fox-2016/my-css-framework#readme"
+}
