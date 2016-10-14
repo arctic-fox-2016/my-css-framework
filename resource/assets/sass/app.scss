@@ -1,0 +1,63 @@
+@import "scaffold";
+@import "bourbon";
+@import "neat";
+
+body {
+  background-color: #fff;
+
+}
+h1 {
+  font-family: $helvetica;
+}
+
+
+section {
+  @include linear-gradient(to top, red, orange);
+}
+
+a:hover {
+  // Animation shorthand works the same as the CSS3 animation shorthand
+  @include animation-iteration-count(infinite);
+
+}
+button{
+}
+
+.box {
+  @include border-style(dashed null solid);
+}
+
+.section-test {
+  @include outer-container;
+  header { @include span-columns(3); }
+  section { @include span-columns(9); }
+}
+
+.ivan-col-6{
+  @include span-columns(6);
+}
+.ivan-col-3 {
+  @include span-columns(3);
+}
+.ivan-col-9{
+  @include span-columns(9);
+}
+.ivan-col-9 {
+  @include span-columns(9);
+}
+
+.button1 {
+  @include button(simple, #ff0000);
+    @include border-top-radius(4px)
+}
+
+
+.button2{
+  @include button(simple, #004ab9)
+  @include border-top-radius(4px)
+}
+
+.button3{
+  @include button(simple, #3e9300);
+    @include border-top-radius(4px)
+}
