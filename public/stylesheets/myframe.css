@@ -1,0 +1,131 @@
+@font-face {
+  font-family: 'mark_my_wordsregular';
+  src: url("../font/mark_my_words-webfont.woff2") format('woff2'), url("../font/mark_my_words-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'Ruslan Display', cursive;
+}
+h1 {
+  font: 'mark_my_wordsregular';
+  font-size: 30px;
+}
+h2 {
+  font: 'mark_my_wordsregular';
+  font-size: 35px;
+}
+h3 {
+  font: 'mark_my_wordsregular';
+  font-size: 30px;
+}
+h4 {
+  font: 'mark_my_wordsregular';
+  font-size: 25px;
+}
+h5 {
+  font: 'mark_my_wordsregular';
+  font-size: 20px;
+}
+h6 {
+  font: 'mark_my_wordsregular';
+  font-size: 15px;
+}
+img.full {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+img.circle {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.black-dark {
+  color: #000;
+}
+.black-light {
+  color: rgba(0,0,0,0.65);
+}
+.btn {
+  border: solid #000;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  color: #fff;
+  font-family: fantasy;
+  font-size: 18px;
+  height: 40px;
+  margin: 3px;
+  padding: 3px;
+  width: 220px;
+}
+.btn.primary {
+  background-color: #00e2f0;
+}
+.btn.info {
+  background-color: #01579b;
+}
+.btn.warning {
+  background-color: $warning;
+}
+.btn.succes {
+  background-color: #00e676;
+}
+.btn.sunkist {
+  background-color: #ff3d00;
+}
+.btn.maroon {
+  background-color: #b71c1c;
+}
+a>.button {
+  background: #00f;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.primary {
+  background-color: #00e2f0;
+}
+.warning {
+  background-color: #ffeb3b;
+}
+.danger {
+  background-color: #f00;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.table-bordered,
+td {
+  padding: 8px;
+}
+.table-bordered td,
+.table-bordered th {
+  font-family: serif;
+  font-size: 18px;
+  font-weight: bolder;
+  height: 25px;
+  min-width: 30px;
+  text-align: left;
+}
+.table-bordered.blue>thead {
+  background-color: #00e2f0;
+  color: #fff;
+}
+.table-bordered.yellow>thead {
+  background-color: #ffeb3b;
+  color: #fff;
+}
+.table.table-bordered.yellow>tbody>tr>th {
+  color: #ffeb3b;
+  font-weight: bolder;
+}
+.table.table-bordered.blue>tbody>tr>th {
+  color: #00e2f0;
+  font-weight: bolder;
+}
+.table-bordered.blue>tbody>th {
+  border-top: 1px solid #ddd;
+}

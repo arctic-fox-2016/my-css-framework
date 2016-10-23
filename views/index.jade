@@ -1,0 +1,85 @@
+extends layout
+
+block content
+  h5 Heading 1  
+  h1= title
+  h5 Heading 2  
+  h2= title
+  h5 Heading 3  
+  h3= title
+  h5 Heading 4  
+  h4= title
+  h5 Heading 5  
+  h5= title
+  h5 Heading 6  
+  h6= title
+  
+  h5 button
+  
+  p .btn
+  
+  button.btn Button
+  
+  p .btn.primary
+  
+  button.btn.primary Button
+  
+  p .btn.info
+  
+  button.btn.info Button
+  
+  p .btn.warning
+  
+  button.btn.warning Button
+  
+  p .btn.succes
+  
+  button.btn.succes Button
+  
+  p .btn.danger
+  
+  button.btn.danger Button
+  
+  p .btn.sunkist
+  
+  button.btn.sunkist Button
+  
+  p .btn.maroon
+  
+  button.btn.maroon Button
+  
+  p img
+  
+  p img.full
+  img.full(src='images/lezat.jpg')  
+  p img.circle
+  img.circle(src='images/lezat.jpg')  
+  
+
+
+  .bs-example(data-example-id='bordered-table')
+  
+  h5 table
+  table.table.table-bordered.blue
+    thead
+      tr
+        th #
+        th First Name
+        th Last Name
+        th Username
+    tbody
+      tr
+        th(scope='row') 1
+        td Mark
+        td Otto
+        td @mdo
+      tr
+        th(scope='row') 2
+        td Jacob
+        td Thornton
+        td @fat
+      tr
+        th(scope='row') 3
+        td Larry
+        td the Bird
+        td @twitter
