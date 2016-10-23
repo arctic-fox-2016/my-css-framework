@@ -1,0 +1,121 @@
+@import 'myvar'
+@import 'font'
+
+border-radius()
+  -moz-border-radius: arguments
+  -webkit-border-radius: arguments
+  border-radius: arguments
+
+body
+  font-family: 'Ruslan Display', cursive
+
+h1
+  font: 'mark_my_wordsregular'
+  font-size: 30px
+
+h2
+  font: 'mark_my_wordsregular'
+  font-size: 35px
+
+h3
+  font: 'mark_my_wordsregular'
+  font-size: 30px
+
+h4
+  font 'mark_my_wordsregular'
+  font-size: 25px
+
+h5
+  font 'mark_my_wordsregular'
+  font-size: 20px
+
+h6
+  font 'mark_my_wordsregular'
+  font-size: 15px
+img.full
+  margin: 0
+  padding: 0
+  width: 100%
+
+img.circle
+  border-radius: 50%
+.black-dark
+  color: $black-dark
+
+.black-light
+  color: $black-light
+
+.btn
+  border: solid black
+  border-radius: 5px
+  color: white
+  font-family:  fantasy
+  font-size: 18px
+  height: 40px
+  margin: 3px
+  padding: 3px
+  width: 220px
+
+.btn.primary
+  background-color: $tbl-blue
+.btn.info
+  background-color: $info
+.btn.warning
+  background-color: $warning
+.btn.succes
+  background-color: $succes
+.btn.sunkist
+  background-color: $sunkist
+.btn.maroon
+  background-color: $maroon
+
+a>.button
+  background: blue
+  border-radius: 5px
+
+.primary
+  background-color: $tbl-blue
+
+.warning
+  background-color: $tbl-yellow
+
+.danger
+  background-color: red
+
+table
+  border-collapse: collapse
+  width: 100%
+
+.table-bordered
+
+td
+  padding: 8px
+
+
+.table-bordered td, .table-bordered th
+  font-family: serif
+  font-size: 18px
+  font-weight: bolder
+  height: 25px
+  min-width: 30px
+  text-align: left
+
+
+.table-bordered.blue>thead
+  background-color: $tbl-blue
+  color: white
+
+.table-bordered.yellow>thead
+  background-color: $tbl-yellow
+  color: white
+
+.table.table-bordered.yellow>tbody>tr>th
+  color: $tbl-yellow
+  font-weight: bolder
+
+.table.table-bordered.blue>tbody>tr>th
+  color: $tbl-blue
+  font-weight: bolder
+
+.table-bordered.blue>tbody>th
+  border-top: 1px solid $gray
